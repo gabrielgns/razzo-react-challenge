@@ -4,7 +4,7 @@ import Navbar from './layout/Navbar';
 
 function App() {
   return (
-    <div id='root'>
+    <div id='App'>
       <GlobalStyle />
       <Navbar />
     </div>

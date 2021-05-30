@@ -1,12 +1,32 @@
 import React from 'react';
 import { BiShoppingBag } from 'react-icons/bi';
-import { NavContainer, Logo } from './styles';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import razzoLogo from '../../assets/razzoLogo.svg';
+import {
+  NavContainer,
+  IconBg,
+  PageIndicator,
+  LineIndicator,
+  UserPhoto,
+  NavSeparetor,
+} from './styles';
 
 const Navbar = () => (
   <NavContainer>
-    <Logo>
-      <BiShoppingBag />
-    </Logo>
+    <NavSeparetor>
+      <img src={razzoLogo} alt='Logo' />
+      <PageIndicator>
+        Dashboard
+        <LineIndicator />
+      </PageIndicator>
+    </NavSeparetor>
+    <NavSeparetor>
+      <IconBg>
+        <BiShoppingBag />
+      </IconBg>
+      <UserPhoto />
+      <MdKeyboardArrowDown />
+    </NavSeparetor>
   </NavContainer>
 );
 
