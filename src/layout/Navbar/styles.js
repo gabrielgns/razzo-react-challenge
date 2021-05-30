@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import ProfilePicture from '../../assets/ProfilePicture.jpg';
 
 export const NavContainer = styled.nav`
@@ -26,32 +25,36 @@ export const LogoSvg = styled.img`
   width: 100px;
 `;
 
-export const HamburguerMenu = styled(GiHamburgerMenu)`
+export const PagesList = styled.ul`
+  display: flex;
+  margin-left: 8vw;
+  height: 100%;
+
   @media only screen and (max-width: 1024px) {
-    display: none;
+    flex-flow: column nowrap;
   }
 `;
 
-export const CurrentPage = styled.a`
+export const PageLink = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   color: #249cf2;
-  font-weight: bold;
-  position: relative;
-  margin-left: 10rem;
   cursor: pointer;
+  z-index: 2;
 `;
 
-export const NavText = styled.p`
-  padding-top: 20%;
+export const NavText = styled.a`
+  height: 100%;
+  padding-top: 40%;
   font-size: 12px;
+  list-style: none;
+  font-weight: bold;
 `;
 
 export const SelectedPage = styled.div`
   width: 100%;
-  height: 3%;
+  height: 5%;
   background: #249cf2;
 `;
 
