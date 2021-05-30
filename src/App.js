@@ -1,8 +1,14 @@
 import React from 'react';
-import GlobalStyle from './styles/globalStyles';
+import GlobalStyle from './layout/globalStyles';
+import Navbar from './layout/Navbar';
 
 function App() {
-  return <GlobalStyle />;
+  return (
+    <div id='root'>
+      <GlobalStyle />
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
