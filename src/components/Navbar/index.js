@@ -13,7 +13,7 @@ import {
   SelectedPage,
   IconWrapper,
   UserPhoto,
-  NavSeparetor,
+  NavSeparetor
 } from './styles';
 
 const Navbar = () => (
