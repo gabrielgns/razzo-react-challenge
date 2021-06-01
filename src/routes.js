@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import businessDetails from './pages/businessDetails';
-import businessList from './pages/businessList';
+import businessList from './pages/List';
 
 const Routes = () => (
   <BrowserRouter>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { MdLocationOn } from 'react-icons/md';
 import api from '../../services/api';
 import {
   BusinessContainer,
   BusinessLogo,
   BusinessText,
-  TextArea
+  BusinessName,
+  BusinessAddress
 } from './styles';
 
 const Business = () => {
@@ -50,19 +52,15 @@ const Business = () => {
     <div>
       <BusinessContainer>
         <BusinessLogo src={logo} alt='logo' />
-        <TextArea>
+        <BusinessName>
           <BusinessText>{name}</BusinessText>
-          <BusinessText>{address.street_name}</BusinessText>
-          <BusinessText>{address.neighborhood}</BusinessText>,
+          <MdLocationOn />
+        </BusinessName>
+        <BusinessAddress>
+          <BusinessText>{address.street_name} </BusinessText>
           <BusinessText>{address.street_number}</BusinessText>
-        </TextArea>
-        {/* <BusinessText>{info[2].address.street_name}</BusinessText> */}
-        {/* <BusinessText>{info.address.neighborhood}</BusinessText> */}
-        {/* <BusinessText>{info.address.street_number}</BusinessText> */}
-        {/* {businesscription}
-      {business.address.street_name}
-      {business.address.neighborhood}
-      {business.address.street_number} */}
+          <BusinessText>{address.neighborhood}</BusinessText>,
+        </BusinessAddress>
       </BusinessContainer>
     </div>
   );

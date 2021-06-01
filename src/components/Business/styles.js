@@ -21,7 +21,16 @@ export const BusinessLogo = styled.img`
   margin-left: 1rem;
 `;
 
-export const TextArea = styled.div`
+export const BusinessName = styled.div`
+  align-self: flex-start;
+  color: #6d5d7a;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+`;
+
+export const BusinessAddress = styled.div`
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  color: #979797;
 `;
