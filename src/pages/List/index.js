@@ -7,16 +7,16 @@ const BusinessList = () => {
   return (
     <GridContainer>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={3} wrap='nowrap'>
           <Business />
         </Grid>
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={3} wrap='nowrap'>
           <Business />
         </Grid>
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={3} wrap='nowrap'>
           <Business />
         </Grid>
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={3} wrap='nowrap'>
           <Business />
         </Grid>
       </Grid>

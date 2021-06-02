@@ -11,7 +11,8 @@ export const BusinessContainer = styled.div`
 `;
 
 export const BusinessText = styled.p`
-  font-size: 12px;
+  font-size: 13px;
+  padding-left: 10px;
 `;
 
 export const BusinessLogo = styled.img`
@@ -26,6 +27,16 @@ export const BusinessName = styled.div`
   color: #6d5d7a;
   display: flex;
   width: 100%;
+  height: 5vh;
+`;
+
+export const TextArea = styled.div``;
+
+export const BusinessCategory = styled.div`
+  color: #249cf2;
+  display: flex;
+  align-items: center;
+  height: 2vh;
 `;
 
 export const BusinessAddress = styled.div`
@@ -33,4 +44,5 @@ export const BusinessAddress = styled.div`
   display: flex;
   justify-content: flex-start;
   color: #979797;
+  height: 8vh;
 `;
