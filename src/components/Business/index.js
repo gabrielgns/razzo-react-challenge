@@ -26,7 +26,7 @@ const Business = () => {
         setAddress(res.data.data[0].address);
         setDescription(res.data.data[0].description);
       })
-      // eslint-disable-next-line no-alert
+      // eslint-disable-next-line no-console
       .catch((error) => console.log(`error ${error}`));
   }
 
