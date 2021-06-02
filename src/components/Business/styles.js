@@ -44,5 +44,5 @@ export const BusinessAddress = styled.div`
   display: flex;
   justify-content: flex-start;
   color: #979797;
-  height: 8vh;
+  height: 5vh;
 `;
